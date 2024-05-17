@@ -1,7 +1,9 @@
 const expess=require("express");
-const { post_register,post_login,verify_otp,send_otp,create_password,authentication};
+const { userRegister, userLogin } = require("../controller/authController");
 const router=expess.Router();
 
-router.post("/register",post_register);
+router.post("/register",userRegister);
+router.post("/login",userLogin);
+router.post("/otp");
 
 module.exports=router;
