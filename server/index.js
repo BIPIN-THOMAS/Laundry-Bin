@@ -10,8 +10,9 @@ require('dotenv').config();
 
 
 connectDB()
+app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded());
+// app.use(express.urlencoded());
 app.use(route);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
