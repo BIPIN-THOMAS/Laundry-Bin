@@ -8,7 +8,7 @@ emlorphnno:{
     type:String,
     required:true,
 },
-pswd:{
+password:{
     type:String,
     required:true,
 },

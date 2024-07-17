@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
@@ -13,13 +10,16 @@ import Forgot from './components/Forgot'
 import Otpverify from './components/Otpverify'
 import Newpass from './components/Newpass'
 import Changepsw from './components/Changepsw'
+import Profile from './components/Profile'
+import Homepage from './Pages/Homepage'
+// import Mynavbar from './components/mynavbar'
 
-import { Component } from 'react'
+// import { Component } from 'react'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    {/* <Mynavbar/> */}
       <Routes>
         <Route path='/' Component={Home} />
         <Route path='/intro' Component={Intro} />
@@ -31,6 +31,8 @@ function App() {
         <Route path='/otpverify' Component={Otpverify} />
         <Route path='/newpass' Component={Newpass} />
         <Route path='/changepsw' Component={Changepsw} />
+        <Route path='/profile' Component={Profile}/>
+        <Route path='/Homepage'Component={Homepage}/>
 
       </Routes>
     </>
